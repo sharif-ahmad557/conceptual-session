@@ -1,6 +1,8 @@
 /* common */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -58,20 +60,21 @@
 
 /* main style */
 main {
-  width: 80%;
+  max-width: 80%;
   display: flex;
   margin: 50px auto;
-  border: 1px solid black;
+  gap: 40px;
 }
-/* main btn stule */
+/* main btn style */
 .btn {
   background-color: rgb(22, 22, 22);
   width: 25%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 5px 5px;
 }
 .btn .btn-primary:nth-child(1) {
   background-color: #ffffff;
@@ -84,4 +87,60 @@ main {
   color: black;
   font-size: 18px;
   font-weight: 600;
+}
+/* box style */
+.cards {
+  max-width: 75%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.box {
+  width: 100%;
+  height: 350px;
+  border: 1px solid rgb(239, 215, 215);
+  border-radius: 5px;
+}
+.box img {
+  width: 100%;
+  height: 175px;
+  border-radius: 10px 10px 0 0;
+}
+.text {
+  padding: 15px;
+}
+.box .btn {
+  width: 100px;
+  height: 32px;
+  color: 1px Inside rgb(22, 22, 22);
+  background-color: #ffffff;
+  border: 2px solid tomato;
+  border-radius: 8px;
+  padding: 8px 10px 10px 10px;
+}
+/* footer style */
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  padding: 30px;
+}
+footer h1 {
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid #4b3a3a;
+  padding: 20px;
+}
+.footer-nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-nav ul li a{
+    text-decoration: none;
+    color: #c19d9d;
 }
