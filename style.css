@@ -13,7 +13,7 @@
 .banner {
   background-color: rgb(22, 22, 22);
   width: 80%;
-  height: 646px;
+  height: auto;
   margin: 50px auto;
   border-radius: 30px;
   display: flex;
@@ -30,7 +30,7 @@
   color: rgb(255, 255, 255);
 }
 .banner-left-description {
-  font-weight: 400px;
+  font-weight: 400;
   row-gap: 26px;
   color: rgb(255, 255, 255);
 }
@@ -43,12 +43,45 @@
 }
 /* banner right style */
 .banner-right {
-  margin: 0 17px 30px;
-  /* width: 50%; */
+  margin-top: 80px;
   flex: 1;
-  height: 100%;
+  height: 500px;
+  overflow: hidden;
 }
 .banner-right-img {
   max-width: 100%;
   height: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+/* main style */
+main {
+  width: 80%;
+  display: flex;
+  margin: 50px auto;
+  border: 1px solid black;
+}
+/* main btn stule */
+.btn {
+  background-color: rgb(22, 22, 22);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+}
+.btn .btn-primary:nth-child(1) {
+  background-color: #ffffff;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn .btn-primary:nth-child(2) {
+  background-color: #ffffff;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
 }
