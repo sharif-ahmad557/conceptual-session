@@ -108,6 +108,10 @@ main {
   font-size: 16px;
   font-weight: 400;
 }
+.btn .btn-primary:nth-child(3) {
+  font-size: 16px;
+  font-weight: 400;
+}
 /* box style */
 .cards {
   max-width: 75%;
@@ -138,6 +142,12 @@ main {
   border: 2px solid tomato;
   border-radius: 8px;
   padding: 8px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+.box .title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 /* footer style */
 footer {
@@ -272,16 +282,23 @@ footer h1 {
   .btn .btn-primary:nth-child(2) {
     border: 1px solid rgb(186, 160, 160);
   }
+  .btn .btn-primary:nth-child(3) {
+    padding: 16px 54px;
+  }
   .cards {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .footer-nav ul {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-    justify-content: center;
+    /* text-align: center;
+    justify-content: center; */
     grid-column: span;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+    row-gap: 2rem;
   }
 }
